@@ -9,12 +9,12 @@ from tedev.data.data_general import model01s
 
 
 # fill_entity_from_form: on post request, fill entity fields from posted form fields
-# from fedev.utiles import send_email
+# from tedev.utiles import send_email
 
 #
 def fill_entity_from_form(entity, entity_id, entity_name):
     keys = list(request.form.keys())
-    for attribute in model01s['fedevB']['fields']:
+    for attribute in model01s['tedevB']['fields']:
         if attribute != 'id' and attribute in keys:
             setattr(entity, attribute, request.form[attribute])
     entity_data = None if entity_id == None else {'id': entity_id, 'name': entity.name}  # return entity, entity_data
@@ -27,7 +27,7 @@ def fill_form_from_entity(EntityForm, Entity, entity_id, entity_name):
     if entity_id != None:  #if request.method == 'POST':
         entity = Entity.query.get(entity_id)
         if entity:
-            fields = model01s['fedevB']['fields']
+            fields = model01s['tedevB']['fields']
             print(fields)
             for attribute in fields:
                 if attribute != 'id' and hasattr(entity,attribute):

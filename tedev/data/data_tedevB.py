@@ -138,7 +138,7 @@ participants00 = [ participant01, participant02, participant03 ]
 
 
 #
-fedevB_model01 = \
+tedevB_model01 = \
     {
         'participant': participants00 ,
         'employee': employees00 ,
@@ -152,7 +152,7 @@ entities_infos = \
     }
 
 #
-fedevB_entity_fields = {
+tedevB_entity_fields = {
     'participant': participant_fields,   #
     'employee': employee_fields,  #
 }

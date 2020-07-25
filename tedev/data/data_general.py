@@ -32,18 +32,18 @@ participant_form_data ={
 
 # --------------------------------------------------------------------------------------------#
 #
-from fedev.core.models.model_fedevB import Entities_fedev
-from fedev.data.data_fedevB import fedevB_entity_fields, fedevB_model01
+from tedev.core.models.model_tedevB import Entities_tedev
+from tedev.data.data_tedevB import tedevB_entity_fields, tedevB_model01
 
-mfedevB = {
-        'fields' : fedevB_entity_fields,
-        'model' : Entities_fedev,
-        'data' :  fedevB_model01,
+mtedevB = {
+        'fields' : tedevB_entity_fields,
+        'model' : Entities_tedev,
+        'data' :  tedevB_model01,
     }
 
 
 #
-model01s = { 'fyyurB' : None, 'triviaB' : None, 'fedevB' : mfedevB }
+model01s = { 'fyyurB' : None, 'triviaB' : None, 'tedevB' : mtedevB }
 
 
 cities = [

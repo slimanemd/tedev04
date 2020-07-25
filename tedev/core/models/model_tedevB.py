@@ -35,7 +35,7 @@ class Participant(db.Model, myMixin):
     #
     def __init__(self, entity=None):
         if entity: edejsonnify(self, entity)
-    def __repr__(self): return json.dumps(ejsonnify('fedevB' ,self))
+    def __repr__(self): return json.dumps(ejsonnify('tedevB' ,self))
 
 # ----------------------------------------------------------------------------#
 #employees
@@ -49,8 +49,8 @@ class Employee(db.Model, myMixin):
     #
     def __init__(self, entity=None):
         if entity: edejsonnify(self, entity)
-    def __repr__(self): return json.dumps(ejsonnify('fedevB' ,self))
+    def __repr__(self): return json.dumps(ejsonnify('tedevB' ,self))
 
 
 # ----------------------------------------------------------------------------#
-Entities_fedev = { 'participant': Participant, 'employee': Employee }
+Entities_tedev = { 'participant': Participant, 'employee': Employee }
